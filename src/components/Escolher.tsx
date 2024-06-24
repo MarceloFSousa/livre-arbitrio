@@ -27,7 +27,7 @@ export const Escolher: React.FC<EscolherProps> = ({
       <div className="flex justify-center items-center pb-2">
         <button
           onClick={handleButtonClick}
-          className="px-16 py-4 mx-auto mt-4 bg-indigo-700 hover:bg-indigo-800 text-white font-semibold rounded-3xl text-xl"
+          className="px-16 py-4 mx-auto mt-4 bg-gradient-to-b to-indigo-900 from-indigo-800 text-white font-semibold rounded-3xl text-xl hover:from-indigo-700 hover:to-indigo-800"
         >
           Escolher
         </button>

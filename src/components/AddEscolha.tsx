@@ -28,20 +28,22 @@ export const AddEscolha = ({setEscolhas, escolhas} : AddEscolhaProps) => {
     setText("");
   };
   return (
+    <div className="flex justify-center w-full max-w-md px-4 items-center">
       <form onSubmit={onSubmit} className="flex items-center">
-      <input
-        type="text"
-        className="flex-1 p-2 text-center text-indigo-700 text-lg font-medium border border-gray-300 rounded-l-lg focus:outline-none"
-        placeholder="Digite sua escolha"
-        value={text}
-        onChange={(e) => setText(e.target.value)}
-      />
-      <button
-        type="submit"
-        className="bg-indigo-600 text-white text-lg p-2 rounded-r-lg hover:bg-indigo-700 items-center"
-      >
-        <FontAwesomeIcon icon={faAnglesRight} className="h-5 w-5" />
-      </button>
-    </form>
-  );
+        <input
+          type="text"
+          className="flex-1 p-2 text-center bg-gray-100 text-indigo-700 text-lg font-medium border border-gray-300 rounded-l-lg focus:outline-none"
+          placeholder="Digite sua escolha"
+          value={text}
+          onChange={(e) => setText(e.target.value)}
+        />
+        <button
+          type="submit"
+          className="bg-gradient-to-b to-indigo-900 from-indigo-800 text-gray-100 text-lg p-2 rounded-r-lg hover:from-indigo-700 hover:to-indigo-800 items-center"
+        >
+          <FontAwesomeIcon icon={faAnglesRight} className="h-5 w-5" />
+        </button>
+      </form>
+    </div>
+  );   
 };
